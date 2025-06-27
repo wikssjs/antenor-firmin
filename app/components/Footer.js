@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
-              {/* Drapeau d'Haïti en SVG */}
+              {/* Drapeau d&apos;Haïti en SVG */}
               <div className="w-12 h-8 relative shadow-sm overflow-hidden">
                 <svg viewBox="0 0 10 6" className="absolute inset-0 w-full h-full">
                   {/* Moitié supérieure bleue */}
@@ -22,11 +22,11 @@ export default function Footer() {
                   </g>
                 </svg>
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold text-white">Groupe d'action pour la rénovation de l'école Anténor Firmin (GABREAF)</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-white">Groupe d&apos;action pour la rénovation de l&apos;école Anténor Firmin (GABREAF)</h3>
             </div>
             <p className="text-white mb-6 max-w-md">
-              Notre mission est de reconstruire l'École Anténor Firmin à Belladère, Haïti, 
-              pour offrir un environnement d'apprentissage sûr et stimulant aux enfants de la région.
+              Notre mission est de reconstruire l&apos;École Anténor Firmin à Belladère, Haïti, 
+              pour offrir un environnement d&apos;apprentissage sûr et stimulant aux enfants de la région.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="h-10 w-10 rounded-full bg-blue-800 flex items-center justify-center text-white hover:bg-blue-700 transition">
@@ -66,8 +66,8 @@ export default function Footer() {
               <li><a href="#" className="text-white hover:text-blue-200 transition">Mentions légales</a></li>
               <li><a href="#" className="text-white hover:text-blue-200 transition">Politique de confidentialité</a></li>
               <li><a href="#" className="text-white hover:text-blue-200 transition">Conditions générales</a></li>
-              <li><a href="#" className="text-white hover:text-blue-200 transition">Statuts de l'association</a></li>
-              <li><a href="#" className="text-white hover:text-blue-200 transition">Rapports d'activité</a></li>
+              <li><a href="#" className="text-white hover:text-blue-200 transition">Statuts de l&apos;association</a></li>
+              <li><a href="#" className="text-white hover:text-blue-200 transition">Rapports d&apos;activité</a></li>
             </ul>
           </div>
         </div>
@@ -91,6 +91,7 @@ export default function Footer() {
               </svg>
             </div>
           </div>
+          <a href="https://jamesbell.ca" target="_blank" rel="noopener noreferrer" className="text-white text-sm mt-4 md:mt-0 md:ml-4 hover:underline">Site créé par James</a>
         </div>
       </div>
     </footer>

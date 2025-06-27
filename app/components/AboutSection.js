@@ -32,19 +32,19 @@ export default function AboutSection() {
             className="lg:w-1/2"
           >
             <div className="bg-white p-6 md:p-8 rounded-xl shadow-lg border border-gray-100 h-full">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4 text-indigo-900">L'École Anténor Firmin</h3>
+              <h3 className="text-2xl md:text-3xl font-bold mb-4 text-indigo-900">L&apos;École Anténor Firmin</h3>
               <p className="text-gray-700 mb-4">
-                Fondée en 1948 par Durmasais Éstimé, l'École Anténor Firmin est un établissement scolaire essentiel pour la communauté de Belladère, 
-                une ville frontalière située dans le département du Centre d'Haïti. Pendant des décennies, elle a fourni une éducation de qualité à des 
-                milliers d'enfants de la région.
+                Fondée en 1948 par Durmasais Éstimé, l&apos;École Anténor Firmin est un établissement scolaire essentiel pour la communauté de Belladère, 
+                une ville frontalière située dans le département du Centre d&apos;Haïti. Pendant des décennies, elle a fourni une éducation de qualité à des 
+                milliers d&apos;enfants de la région.
               </p>
               <p className="text-gray-700 mb-4">
-                Malheureusement, suite à l'instabilité politique, l'école a subi d'importants 
+                Malheureusement, suite à l&apos;instabilité politique, l&apos;école a subi d&apos;importants 
                 dommages structurels, rendant les bâtiments dangereux pour les élèves et le personnel enseignant.
               </p>
               <p className="text-gray-700">
-                GABREAF s'est donnée pour mission de rénover entièrement cette école, afin de permettre aux enfants 
-                de Belladère de retrouver un environnement d'apprentissage sûr et stimulant.
+                GABREAF s&apos;est donnée pour mission de rénover entièrement cette école, afin de permettre aux enfants 
+                de Belladère de retrouver un environnement d&apos;apprentissage sûr et stimulant.
               </p>
             </div>
           </motion.div>
@@ -68,7 +68,7 @@ export default function AboutSection() {
                   </div>
                   <div className="ml-4">
                     <h4 className="text-lg font-medium text-indigo-900">Court terme (2025-2026)</h4>
-                    <p className="text-gray-600">Rénover et ajouter deux nouvelles salles de classe qui sont dans le couloir de l'école depuis 47 ans depuis la reforme du ministre Joseph C. Bernard</p>
+                    <p className="text-gray-600">Rénover et ajouter deux nouvelles salles de classe qui sont dans le couloir de l&apos;école depuis 47 ans depuis la reforme du ministre Joseph C. Bernard</p>
                   </div>
                 </div>
                 
@@ -80,7 +80,7 @@ export default function AboutSection() {
                   </div>
                   <div className="ml-4">
                     <h4 className="text-lg font-medium text-indigo-900">Moyen terme (2026-2027)</h4>
-                    <p className="text-gray-600">Équiper l'école de matériel pédagogique moderne et créer une bibliothèque et un laboratoire informatique.</p>
+                    <p className="text-gray-600">Équiper l&apos;école de matériel pédagogique moderne et créer une bibliothèque et un laboratoire informatique.</p>
                   </div>
                 </div>
                 

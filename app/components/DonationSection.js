@@ -47,7 +47,7 @@ export default function DonationSection() {
           <h2 className="text-4xl md:text-5xl font-bold mt-2 mb-4 text-indigo-900">Faites un don</h2>
           <div className="h-1 w-20 bg-indigo-600 mx-auto"></div>
           <p className="max-w-2xl mx-auto mt-6 text-gray-700">
-            Votre générosité permettra de reconstruire l'École Anténor Firmin et d'offrir un avenir meilleur aux enfants de Belladère.
+            Votre générosité permettra de reconstruire l&apos;École Anténor Firmin et d&apos;offrir un avenir meilleur aux enfants de Belladère.
             Chaque don compte, quelle que soit sa taille.
           </p>
         </motion.div>

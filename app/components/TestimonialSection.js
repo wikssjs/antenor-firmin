@@ -23,8 +23,8 @@ export default function TestimonialSection() {
           <h2 className="text-4xl md:text-5xl font-bold mt-2 mb-4 text-indigo-900">Témoignages</h2>
           <div className="h-1 w-20 bg-indigo-600 mx-auto"></div>
           <p className="max-w-2xl mx-auto mt-6 text-gray-700">
-            Découvrez les témoignages d'anciens élèves, de parents et d'enseignants sur l'importance 
-            de l'École Anténor Firmin dans leur vie et pour la communauté de Belladère.
+            Découvrez les témoignages d&apos;anciens élèves, de parents et d&apos;enseignants sur l&apos;importance 
+            de l&apos;École Anténor Firmin dans leur vie et pour la communauté de Belladère.
           </p>
         </motion.div>
         
@@ -43,9 +43,9 @@ export default function TestimonialSection() {
                 </svg>
               </div>
               <p className="text-gray-700 mb-6 flex-grow">
-                "L'École Anténor Firmin a été le fondement de ma réussite. C'est là que j'ai appris non seulement 
-                à lire et à écrire, mais aussi les valeurs qui m'ont guidé tout au long de ma vie. Sa reconstruction 
-                est essentielle pour que les enfants d'aujourd'hui aient les mêmes chances que j'ai eues."
+                &quot;L&apos;École Anténor Firmin a été le fondement de ma réussite. C&apos;est là que j&apos;ai appris non seulement 
+                à lire et à écrire, mais aussi les valeurs qui m&apos;ont guidé tout au long de ma vie. Sa reconstruction 
+                est essentielle pour que les enfants d&apos;aujourd&apos;hui aient les mêmes chances que j&apos;ai eues.&quot;
               </p>
               <div className="flex items-center">
                 <div className="h-12 w-12 rounded-full bg-indigo-200 flex items-center justify-center mr-4">
@@ -73,9 +73,9 @@ export default function TestimonialSection() {
                 </svg>
               </div>
               <p className="text-gray-700 mb-6 flex-grow">
-                "En tant qu'enseignante depuis 15 ans à l'École Anténor Firmin, j'ai vu des générations d'élèves 
-                s'épanouir malgré des conditions difficiles. Aujourd'hui, nous enseignons dans des abris temporaires 
-                qui fuient quand il pleut. Nos enfants méritent mieux. Ils méritent un vrai lieu d'apprentissage."
+                &quot;En tant qu&apos;enseignante depuis 15 ans à l&apos;École Anténor Firmin, j&apos;ai vu des générations d&apos;élèves 
+                s&apos;épanouir malgré des conditions difficiles. Aujourd&apos;hui, nous enseignons dans des abris temporaires 
+                qui fuient quand il pleut. Nos enfants méritent mieux. Ils méritent un vrai lieu d&apos;apprentissage.&quot;
               </p>
               <div className="flex items-center">
                 <div className="h-12 w-12 rounded-full bg-indigo-200 flex items-center justify-center mr-4">
@@ -103,9 +103,10 @@ export default function TestimonialSection() {
                 </svg>
               </div>
               <p className="text-gray-700 mb-6 flex-grow">
-                "Mes trois enfants fréquentent l'École Anténor Firmin. Depuis l'effondrement du bâtiment, 
+                &quot;Mes trois enfants fréquentent l&apos;École Anténor Firmin. Depuis l&apos;effondrement du bâtiment, 
                 ils reviennent souvent mouillés quand il pleut, et ils ne peuvent plus faire certaines activités. 
-                Cette école est le cœur de notre communauté, et sa reconstruction donnera un nouvel espoir à nos enfants."
+                Cette école est le cœur de notre communauté, et sa reconstruction donnera un nouvel espoir 
+                à nos enfants.&quot;
               </p>
               <div className="flex items-center">
                 <div className="h-12 w-12 rounded-full bg-indigo-200 flex items-center justify-center mr-4">
@@ -131,8 +132,8 @@ export default function TestimonialSection() {
             <div className="md:w-3/4 mb-6 md:mb-0 md:pr-8">
               <h3 className="text-2xl md:text-3xl font-bold mb-4 text-indigo-900">Rejoignez ceux qui nous soutiennent</h3>
               <p className="text-indigo-100">
-                Votre don, quel que soit son montant, contribuera directement à la reconstruction de l'École Anténor Firmin 
-                et à l'avenir des enfants de Belladère. Ensemble, nous pouvons faire la différence.
+                Votre don, quel que soit son montant, contribuera directement à la reconstruction de l&apos;École Anténor Firmin 
+                et à l&apos;avenir des enfants de Belladère. Ensemble, nous pouvons faire la différence.
               </p>
             </div>
             <div className="md:w-1/4 flex justify-center">

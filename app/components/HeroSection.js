@@ -20,9 +20,9 @@ export default function HeroSection({ donationGoal = 15000000, currentDonations 
       {/* Overlay d'image en arrière-plan */}
       <div className="absolute inset-0 bg-black opacity-60 z-0"></div>
       
-      {/* Image de fond (à remplacer par une image réelle de l'école) */}
+      {/* Image de fond (à remplacer par une image réelle de l&apos;école) */}
       <div className="absolute inset-0 z-[-1] bg-blue-800 flex items-center justify-center">
-        <span className="text-white text-xl font-medium">Image de l'école à Belladère</span>
+        <span className="text-white text-xl font-medium">Image de l&apos;école à Belladère</span>
       </div>
       
       <div className="container mx-auto px-4 pt-32 pb-20 relative z-10">
@@ -34,7 +34,7 @@ export default function HeroSection({ donationGoal = 15000000, currentDonations 
           >
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6 text-white">
               Rénovons ensemble<br />
-              <span className="text-white">l'École Anténor Firmin</span>
+              <span className="text-white">l&apos;École Anténor Firmin</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-white mb-8 max-w-2xl">

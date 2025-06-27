@@ -23,7 +23,7 @@ export default function ContactSection() {
           <div className="h-1 w-20 bg-indigo-600 mx-auto"></div>
           <p className="max-w-2xl mx-auto mt-6 text-gray-700">
             Vous avez des questions sur notre projet ou souhaitez vous impliquer davantage ? 
-            N'hésitez pas à nous contacter, nous serons ravis d'échanger avec vous.
+            N&apos;hésitez pas à nous contacter, nous serons ravis d&apos;échanger avec vous.
           </p>
         </motion.div>
         
@@ -146,7 +146,7 @@ export default function ContactSection() {
                     className="h-5 w-5 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500 mt-1"
                   />
                   <label htmlFor="privacy-policy" className="ml-3 text-gray-700">
-                    J'accepte que mes données soient traitées conformément à la politique de confidentialité
+                    J&apos;accepte que mes données soient traitées conformément à la politique de confidentialité
                   </label>
                 </div>
                 

@@ -95,11 +95,11 @@ export default function WhyRebuildSection() {
           className="text-center mb-16"
         >
           <span className="text-indigo-600 font-semibold uppercase tracking-wider">Pourquoi reconstruire</span>
-          <h2 className="text-4xl md:text-5xl font-bold mt-2 mb-4 text-indigo-900">L'importance de ce projet</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mt-2 mb-4 text-indigo-900">L&apos;importance de ce projet</h2>
           <div className="h-1 w-20 bg-indigo-600 mx-auto"></div>
           <p className="max-w-2xl mx-auto mt-6 text-gray-700">
-            L'École Anténor Firmin a subi d'importants dégâts qui compromettent la sécurité des élèves et la qualité de l'enseignement.
-            Découvrez pourquoi cette reconstruction est cruciale pour l'avenir de la communauté.
+            L&apos;École Anténor Firmin a subi d&apos;importants dégâts qui compromettent la sécurité des élèves et la qualité de l&apos;enseignement.
+            Découvrez pourquoi cette reconstruction est cruciale pour l&apos;avenir de la communauté.
           </p>
         </motion.div>
         
@@ -177,7 +177,7 @@ export default function WhyRebuildSection() {
             <div className="p-8">
               <h3 className="text-2xl md:text-3xl font-bold mb-4 text-indigo-900">Le plan de reconstruction</h3>
               <p className="text-gray-700 mb-6 text-lg">
-                Nous avons élaboré un plan détaillé pour reconstruire l'école avec des infrastructures modernes, 
+                Nous avons élaboré un plan détaillé pour reconstruire l&apos;école avec des infrastructures modernes, 
                 durables et adaptées aux besoins de la communauté éducative de Belladère.
               </p>
               <div className="mb-6">
