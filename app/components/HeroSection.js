@@ -41,7 +41,7 @@ export default function HeroSection({ donationGoal = 15000000, currentDonations 
               Aidez-nous à offrir un avenir meilleur aux enfants de Belladère, Haïti, 
               en participant à la rénovation de leur école.
               <br />
-              Nous solicitons l'aide de toute la communauté belladeroise pour accomplir cette mission.
+              Nous solicitons l&apos;aide de toute la communauté belladeroise pour accomplir cette mission.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-12">

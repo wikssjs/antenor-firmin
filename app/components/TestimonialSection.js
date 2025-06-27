@@ -114,7 +114,7 @@ export default function TestimonialSection() {
                 </div>
                 <div>
                   <p className="font-medium text-gray-900">Rose Louis</p>
-                  <p className="text-sm text-gray-600">Parent d'élèves</p>
+                  <p className="text-sm text-gray-600">Parent d&apos;élèves</p>
                 </div>
               </div>
             </div>

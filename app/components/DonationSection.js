@@ -80,7 +80,7 @@ export default function DonationSection() {
                     <span className="text-indigo-700 font-bold">2</span>
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-lg font-medium text-indigo-700">Main d'œuvre locale</h4>
+                    <h4 className="text-lg font-medium text-indigo-700">Main d&apos;œuvre locale</h4>
                     <p className="text-gray-600">Rémunération des ouvriers et artisans locaux, créant ainsi des emplois dans la communauté de Belladère.</p>
                   </div>
                 </div>
@@ -102,7 +102,7 @@ export default function DonationSection() {
                 <div className="flex items-center justify-between">
                   <div>
                     <h4 className="font-medium text-indigo-900">Transparence totale</h4>
-                    <p className="text-sm text-gray-600">Nous publions régulièrement des rapports détaillés sur l'utilisation des fonds.</p>
+                    <p className="text-sm text-gray-600">Nous publions régulièrement des rapports détaillés sur l&apos;utilisation des fonds.</p>
                   </div>
                   <Link 
                     href="#" 

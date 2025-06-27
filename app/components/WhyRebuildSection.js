@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
+import Image from "next/image";
 
 export default function WhyRebuildSection() {
   const fadeIn = {
@@ -47,26 +48,25 @@ export default function WhyRebuildSection() {
   };
 
   // Fonctions de navigation
-  const showNextImage = () => {
+  const showNextImage = useCallback(() => {
     setCurrentIndex((prevIndex) => {
       const nextIndex = (prevIndex + 1) % currentGallery.length;
       setCurrentImage(currentGallery[nextIndex]);
       return nextIndex;
     });
-  };
+  }, [currentGallery]);
 
-  const showPrevImage = () => {
+  const showPrevImage = useCallback(() => {
     setCurrentIndex((prevIndex) => {
       const prevIndexNew = (prevIndex - 1 + currentGallery.length) % currentGallery.length;
       setCurrentImage(currentGallery[prevIndexNew]);
       return prevIndexNew;
     });
-  };
+  }, [currentGallery]);
 
   // Gestionnaire de touches clavier
-  const handleKeyDown = (event) => {
+  const handleKeyDown = useCallback((event) => {
     if (!showImageModal) return;
-    
     if (event.key === 'ArrowRight') {
       showNextImage();
     } else if (event.key === 'ArrowLeft') {
@@ -74,7 +74,7 @@ export default function WhyRebuildSection() {
     } else if (event.key === 'Escape') {
       setShowImageModal(false);
     }
-  };
+  }, [showImageModal, showNextImage, showPrevImage]);
 
   // Ajouter l'effet pour les touches clavier
   useEffect(() => {
@@ -82,7 +82,7 @@ export default function WhyRebuildSection() {
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [showImageModal]);
+  }, [showImageModal, handleKeyDown]);
 
   return (
     <section id="pourquoi" className="py-24 bg-white">
@@ -113,10 +113,12 @@ export default function WhyRebuildSection() {
         >
           <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-8">
             <div className="h-72 bg-indigo-800 relative">
-              <img 
+              <Image 
                 src="/toit.jpeg" 
                 alt="Dégâts structurels - image principale" 
                 className="w-full h-full object-cover"
+                width={1200} height={288}
+                priority
               />
             </div>
             <div className="p-8">
@@ -147,10 +149,11 @@ export default function WhyRebuildSection() {
                 className="relative h-80 overflow-hidden rounded-xl shadow-lg cursor-pointer transform transition-transform hover:scale-105"
                 onClick={() => openImageModal(img, degatImages, index)}
               >
-                <img 
+                <Image 
                   src={img} 
                   alt={`Dégât ${index + 1}`} 
                   className="w-full h-full object-cover" 
+                  width={400} height={320}
                 />
               </div>
             ))}
@@ -167,11 +170,12 @@ export default function WhyRebuildSection() {
         >
           <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-8">
             <div className=" h-96 bg-indigo-700 relative">
-              <img 
+              <Image 
                 src="/plan.png" 
                 alt="Plan de reconstruction" 
                 className="w-full h-full object-cover" 
                 style={{ objectPosition: 'center' }}
+                width={1200} height={384}
               />
             </div>
             <div className="p-8">
@@ -207,16 +211,17 @@ export default function WhyRebuildSection() {
         >
           <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-8">
             <div className="h-72 bg-indigo-600 relative">
-              <img 
+              <Image 
                 src="/eleves-1.jpeg" 
                 alt="Élèves - image principale" 
                 className="w-full h-full object-cover"
+                width={1200} height={288}
               />
             </div>
             <div className="p-8">
               <h3 className="text-2xl md:text-3xl font-bold mb-4 text-indigo-900">La communauté</h3>
               <p className="text-gray-700 mb-6 text-lg">
-                L'école est bien plus qu'un lieu d'apprentissage : c'est un centre communautaire vital qui 
+                L&apos;école est bien plus qu&apos;un lieu d&apos;apprentissage : c&apos;est un centre communautaire vital qui 
                 offre stabilité et espoir dans une région confrontée à de nombreux défis socio-économiques.
               </p>
             </div>
@@ -230,10 +235,11 @@ export default function WhyRebuildSection() {
                 className="relative h-80 overflow-hidden rounded-xl shadow-lg cursor-pointer transform transition-transform hover:scale-105"
                 onClick={() => openImageModal(img, elevesImages, index)}
               >
-                <img 
+                <Image 
                   src={img} 
                   alt={`Élèves ${index + 1}`} 
                   className="w-full h-full object-cover" 
+                  width={400} height={320}
                 />
               </div>
             ))}
@@ -249,18 +255,18 @@ export default function WhyRebuildSection() {
         >
           <div className="flex flex-col md:flex-row gap-8">
             <div className="md:w-1/2">
-              <h3 className="text-2xl md:text-3xl font-bold text-indigo-900 mb-6">L'urgence de la situation</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-indigo-900 mb-6">L&apos;urgence de la situation</h3>
               <p className="text-gray-700 mb-4 text-lg">
-                Chaque jour qui passe sans action compromet davantage l'avenir éducatif des enfants de Belladère. 
+                Chaque jour qui passe sans action compromet davantage l&apos;avenir éducatif des enfants de Belladère. 
                 Les structures temporaires actuelles ne résisteront pas à la prochaine saison des pluies, et nous risquons 
                 de perdre complètement cette institution essentielle.
               </p>
               <p className="text-gray-700 mb-4 text-lg">
-                Sans école adéquate, de nombreux enfants abandonnent leur scolarité, ce qui perpétue le cycle de la pauvreté 
-                et limite les perspectives d'avenir de toute la communauté.
+                Sans école adéquate, de nombreux enfants abandonnent leur scolarité, ce qui perpétue le cycle de la pauvreté
+                et limite les perspectives d&apos;avenir de toute la communauté.
               </p>
               <p className="text-gray-700 font-medium text-lg">
-                Votre soutien aujourd'hui est crucial pour inverser cette tendance et offrir un avenir meilleur aux 
+                Votre soutien aujourd&apos;hui est crucial pour inverser cette tendance et offrir un avenir meilleur aux 
                 générations futures.
               </p>
             </div>
@@ -272,7 +278,7 @@ export default function WhyRebuildSection() {
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-indigo-600 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span className="text-gray-700 text-lg">Un environnement d'apprentissage sûr et stimulant pour plus de 300 élèves</span>
+                  <span className="text-gray-700 text-lg">Un environnement d&apos;apprentissage sûr et stimulant pour plus de 300 élèves</span>
                 </li>
                 <li className="flex items-start">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-indigo-600 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -296,13 +302,13 @@ export default function WhyRebuildSection() {
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-indigo-600 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span className="text-gray-700 text-lg">Des opportunités d'emploi local pendant et après la reconstruction</span>
+                  <span className="text-gray-700 text-lg">Des opportunités d&apos;emploi local pendant et après la reconstruction</span>
                 </li>
                 <li className="flex items-start">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-indigo-600 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span className="text-gray-700 text-lg">Un symbole d'espoir et de résilience pour toute la communauté</span>
+                  <span className="text-gray-700 text-lg">Un symbole d&apos;espoir et de résilience pour toute la communauté</span>
                 </li>
               </ul>
             </div>
@@ -398,10 +404,11 @@ export default function WhyRebuildSection() {
 
             {/* Image */}
             <div className="relative max-w-7xl max-h-full">
-              <img 
+              <Image 
                 src={currentImage} 
                 alt="Image en plein écran" 
                 className="max-h-[90vh] max-w-full object-contain"
+                width={1200} height={800}
               />
               
               {/* Indicateur de position */}
