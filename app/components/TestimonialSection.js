@@ -1,0 +1,151 @@
+"use client";
+
+import { motion } from "framer-motion";
+import Link from "next/link";
+
+export default function TestimonialSection() {
+  const fadeIn = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+  };
+
+  return (
+    <section id="temoignages" className="py-24 bg-gradient-to-b from-white to-indigo-50">
+      <div className="container mx-auto px-4">
+        <motion.div 
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={fadeIn}
+          className="text-center mb-16"
+        >
+          <span className="text-indigo-600 font-semibold uppercase tracking-wider">Ils témoignent</span>
+          <h2 className="text-4xl md:text-5xl font-bold mt-2 mb-4 text-indigo-900">Témoignages</h2>
+          <div className="h-1 w-20 bg-indigo-600 mx-auto"></div>
+          <p className="max-w-2xl mx-auto mt-6 text-gray-700">
+            Découvrez les témoignages d'anciens élèves, de parents et d'enseignants sur l'importance 
+            de l'École Anténor Firmin dans leur vie et pour la communauté de Belladère.
+          </p>
+        </motion.div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={fadeIn}
+            className="bg-white p-6 rounded-xl shadow-md"
+          >
+            <div className="flex flex-col h-full">
+              <div className="mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-indigo-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                </svg>
+              </div>
+              <p className="text-gray-700 mb-6 flex-grow">
+                "L'École Anténor Firmin a été le fondement de ma réussite. C'est là que j'ai appris non seulement 
+                à lire et à écrire, mais aussi les valeurs qui m'ont guidé tout au long de ma vie. Sa reconstruction 
+                est essentielle pour que les enfants d'aujourd'hui aient les mêmes chances que j'ai eues."
+              </p>
+              <div className="flex items-center">
+                <div className="h-12 w-12 rounded-full bg-indigo-200 flex items-center justify-center mr-4">
+                  <span className="text-indigo-700 font-bold">JB</span>
+                </div>
+                <div>
+                  <p className="font-medium text-gray-900">Jean Baptiste</p>
+                  <p className="text-sm text-gray-600">Ancien élève, Promotion 2005</p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+          
+          <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={{...fadeIn, transition: { delay: 0.1, duration: 0.6 }}}
+            className="bg-white p-6 rounded-xl shadow-md"
+          >
+            <div className="flex flex-col h-full">
+              <div className="mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-indigo-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                </svg>
+              </div>
+              <p className="text-gray-700 mb-6 flex-grow">
+                "En tant qu'enseignante depuis 15 ans à l'École Anténor Firmin, j'ai vu des générations d'élèves 
+                s'épanouir malgré des conditions difficiles. Aujourd'hui, nous enseignons dans des abris temporaires 
+                qui fuient quand il pleut. Nos enfants méritent mieux. Ils méritent un vrai lieu d'apprentissage."
+              </p>
+              <div className="flex items-center">
+                <div className="h-12 w-12 rounded-full bg-indigo-200 flex items-center justify-center mr-4">
+                  <span className="text-indigo-700 font-bold">MJ</span>
+                </div>
+                <div>
+                  <p className="font-medium text-gray-900">Marie Joseph</p>
+                  <p className="text-sm text-gray-600">Enseignante depuis 2008</p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+          
+          <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={{...fadeIn, transition: { delay: 0.2, duration: 0.6 }}}
+            className="bg-white p-6 rounded-xl shadow-md"
+          >
+            <div className="flex flex-col h-full">
+              <div className="mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-indigo-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                </svg>
+              </div>
+              <p className="text-gray-700 mb-6 flex-grow">
+                "Mes trois enfants fréquentent l'École Anténor Firmin. Depuis l'effondrement du bâtiment, 
+                ils reviennent souvent mouillés quand il pleut, et ils ne peuvent plus faire certaines activités. 
+                Cette école est le cœur de notre communauté, et sa reconstruction donnera un nouvel espoir à nos enfants."
+              </p>
+              <div className="flex items-center">
+                <div className="h-12 w-12 rounded-full bg-indigo-200 flex items-center justify-center mr-4">
+                  <span className="text-indigo-700 font-bold">RL</span>
+                </div>
+                <div>
+                  <p className="font-medium text-gray-900">Rose Louis</p>
+                  <p className="text-sm text-gray-600">Parent d'élèves</p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+        
+        <motion.div 
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={fadeIn}
+          className="bg-indigo-600 text-white p-8 rounded-xl shadow-lg"
+        >
+          <div className="flex flex-col md:flex-row items-center">
+            <div className="md:w-3/4 mb-6 md:mb-0 md:pr-8">
+              <h3 className="text-2xl md:text-3xl font-bold mb-4 text-indigo-900">Rejoignez ceux qui nous soutiennent</h3>
+              <p className="text-indigo-100">
+                Votre don, quel que soit son montant, contribuera directement à la reconstruction de l'École Anténor Firmin 
+                et à l'avenir des enfants de Belladère. Ensemble, nous pouvons faire la différence.
+              </p>
+            </div>
+            <div className="md:w-1/4 flex justify-center">
+              <Link 
+                href="#dons" 
+                className="inline-block bg-white text-indigo-700 hover:bg-indigo-50 font-bold py-3 px-8 rounded-full transition duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1"
+              >
+                Faire un don
+              </Link>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+} 
