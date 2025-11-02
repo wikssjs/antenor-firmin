@@ -54,7 +54,7 @@ export default function Footer() {
               <li><a href="#about" className="text-white hover:text-blue-200 transition">À propos</a></li>
               <li><a href="#pourquoi" className="text-white hover:text-blue-200 transition">Pourquoi reconstruire</a></li>
               <li><a href="#temoignages" className="text-white hover:text-blue-200 transition">Témoignages</a></li>
-              <li><a href="#dons" className="text-white hover:text-blue-200 transition">Faire un don</a></li>
+              <li><a href="#equipe" className="text-white hover:text-blue-200 transition">Notre équipe</a></li>
               <li><a href="#localisation" className="text-white hover:text-blue-200 transition">Localisation</a></li>
               <li><a href="#contact" className="text-white hover:text-blue-200 transition">Contact</a></li>
             </ul>

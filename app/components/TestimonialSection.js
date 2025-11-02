@@ -128,22 +128,12 @@ export default function TestimonialSection() {
           variants={fadeIn}
           className="bg-indigo-600 text-white p-8 rounded-xl shadow-lg"
         >
-          <div className="flex flex-col md:flex-row items-center">
-            <div className="md:w-3/4 mb-6 md:mb-0 md:pr-8">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4 text-indigo-900">Rejoignez ceux qui nous soutiennent</h3>
-              <p className="text-indigo-100">
-                Votre don, quel que soit son montant, contribuera directement à la reconstruction de l&apos;École Anténor Firmin 
-                et à l&apos;avenir des enfants de Belladère. Ensemble, nous pouvons faire la différence.
-              </p>
-            </div>
-            <div className="md:w-1/4 flex justify-center">
-              <Link 
-                href="#dons" 
-                className="inline-block bg-white text-indigo-700 hover:bg-indigo-50 font-bold py-3 px-8 rounded-full transition duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1"
-              >
-                Faire un don
-              </Link>
-            </div>
+          <div className="text-center">
+            <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">Ensemble pour l&apos;éducation</h3>
+            <p className="text-indigo-100 max-w-2xl mx-auto">
+              Chaque témoignage renforce notre détermination à offrir aux enfants de Belladère 
+              un environnement d&apos;apprentissage sûr et moderne. Votre soutien fait la différence.
+            </p>
           </div>
         </motion.div>
       </div>

@@ -3,17 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-export default function HeroSection({ donationGoal = 15000000, currentDonations = 0 }) {
-  const donationPercentage = Math.round((currentDonations / donationGoal) * 100);
-  
-  // Fonction pour formater les montants en gourdes haïtiennes
-  const formatHTG = (amount) => {
-    return new Intl.NumberFormat('fr-HT', {
-      style: 'currency',
-      currency: 'HTG',
-      maximumFractionDigits: 0
-    }).format(amount);
-  };
+export default function HeroSection() {
   
   return (
     <section className="relative min-h-screen flex items-center bg-blue-900 text-white overflow-hidden">
@@ -46,12 +36,6 @@ export default function HeroSection({ donationGoal = 15000000, currentDonations 
             
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <Link 
-                href="#dons" 
-                className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1 text-center"
-              >
-                Faire un don
-              </Link>
-              <Link 
                 href="#about" 
                 className="bg-white hover:bg-blue-50 text-blue-900 font-bold py-3 px-8 rounded-full transition duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1 text-center"
               >
@@ -60,47 +44,6 @@ export default function HeroSection({ donationGoal = 15000000, currentDonations 
             </div>
           </motion.div>
           
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
-            className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20"
-          >
-            <div className="flex flex-col md:flex-row md:items-center gap-6">
-              <div className="md:w-2/3">
-                <h3 className="text-xl font-semibold mb-2 text-white">Notre objectif de collecte</h3>
-                <div className="w-full bg-blue-900/50 rounded-full h-6 mb-3">
-                  <div 
-                    className="bg-red-500 h-6 rounded-full" 
-                    style={{ width: `${donationPercentage}%` }}
-                  ></div>
-                </div>
-                <div className="flex justify-between">
-                  <div className="bg-blue-800 px-3 py-1 rounded-lg">
-                    <span className="text-white font-medium text-base">
-                      {formatHTG(currentDonations)} collectés
-                    </span>
-                  </div>
-                  <div className="bg-blue-800 px-3 py-1 rounded-lg">
-                    <span className="text-white font-medium text-base">
-                      Objectif: {formatHTG(donationGoal)}
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="md:w-1/3 flex justify-center md:justify-end">
-                <Link 
-                  href="#pourquoi" 
-                  className="inline-flex items-center text-white bg-red-600 hover:bg-red-700 font-medium py-2 px-4 rounded-lg transition duration-300"
-                >
-                  Pourquoi rénover
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-                </Link>
-              </div>
-            </div>
-          </motion.div>
         </div>
       </div>
       

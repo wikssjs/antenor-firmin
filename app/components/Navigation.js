@@ -81,6 +81,14 @@ export default function Navigation() {
               Témoignages
             </Link>
             <Link 
+              href="#equipe" 
+              className={`hover:text-red-400 transition ${
+                isScrolled ? "text-blue-900" : "text-white"
+              }`}
+            >
+              Notre équipe
+            </Link>
+            <Link 
               href="#localisation" 
               className={`hover:text-red-400 transition ${
                 isScrolled ? "text-blue-900" : "text-white"
@@ -95,16 +103,6 @@ export default function Navigation() {
               }`}
             >
               Contact
-            </Link>
-            <Link 
-              href="#dons" 
-              className={`${
-                isScrolled 
-                  ? "bg-red-600 hover:bg-red-700 text-white" 
-                  : "bg-white hover:bg-blue-50 text-blue-900"
-              } font-bold py-2 px-6 rounded-full transition duration-300`}
-            >
-              Faire un don
             </Link>
           </nav>
           
@@ -149,6 +147,15 @@ export default function Navigation() {
                 Témoignages
               </Link>
               <Link 
+                href="#equipe" 
+                className={`hover:text-red-400 transition ${
+                  isScrolled ? "text-blue-900" : "text-white"
+                }`}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Notre équipe
+              </Link>
+              <Link 
                 href="#localisation" 
                 className={`hover:text-red-400 transition ${
                   isScrolled ? "text-blue-900" : "text-white"
@@ -165,17 +172,6 @@ export default function Navigation() {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Contact
-              </Link>
-              <Link 
-                href="#dons" 
-                className={`${
-                  isScrolled 
-                    ? "bg-red-600 hover:bg-red-700 text-white" 
-                    : "bg-white hover:bg-blue-50 text-blue-900"
-                } font-bold py-2 px-6 rounded-full transition duration-300 inline-block text-center mt-2`}
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Faire un don
               </Link>
             </nav>
           </div>

@@ -67,7 +67,7 @@ export default function AboutSection() {
                     </svg>
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-lg font-medium text-indigo-900">Court terme (2025-2026)</h4>
+                    <h4 className="text-lg font-medium text-indigo-900">Court terme</h4>
                     <p className="text-gray-600">Rénover et ajouter deux nouvelles salles de classe qui sont dans le couloir de l&apos;école depuis 47 ans depuis la reforme du ministre Joseph C. Bernard</p>
                   </div>
                 </div>
@@ -79,7 +79,7 @@ export default function AboutSection() {
                     </svg>
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-lg font-medium text-indigo-900">Moyen terme (2026-2027)</h4>
+                    <h4 className="text-lg font-medium text-indigo-900">Moyen terme</h4>
                     <p className="text-gray-600">Équiper l&apos;école de matériel pédagogique moderne et créer une bibliothèque et un laboratoire informatique.</p>
                   </div>
                 </div>
@@ -91,7 +91,7 @@ export default function AboutSection() {
                     </svg>
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-lg font-medium text-indigo-900">Long terme (2027 et au-delà)</h4>
+                    <h4 className="text-lg font-medium text-indigo-900">Long terme</h4>
                     <p className="text-gray-600">Développer des programmes éducatifs innovants et former les enseignants aux méthodes pédagogiques modernes.</p>
                   </div>
                 </div>
