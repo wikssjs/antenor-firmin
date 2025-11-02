@@ -59,27 +59,27 @@ export default function TeamSection() {
               
               <div className="space-y-4 text-gray-700">
                 <p className="text-lg leading-relaxed">
-                  Le <strong>Groupe d'Action pour la Reconstruction de l'École Anténor Firmin (GABREAF)</strong> 
-                  est une organisation communautaire composée d'anciens élèves, de parents, d'enseignants et de 
+                  Le <strong>Groupe d&apos;Action pour la Reconstruction de l&apos;École Anténor Firmin (GABREAF)</strong> 
+                  est une organisation communautaire composée d&apos;anciens élèves, de parents, d&apos;enseignants et de 
                   membres de la diaspora belladeroise unis par une vision commune.
                 </p>
                 
                 <p className="leading-relaxed">
-                  Notre équipe multidisciplinaire rassemble des professionnels de l'éducation, de l'ingénierie, 
+                  Notre équipe multidisciplinaire rassemble des professionnels de l&apos;éducation, de l&apos;ingénierie, 
                   de la gestion de projet et du développement communautaire. Ensemble, nous mettons nos compétences 
                   et notre passion au service de la reconstruction de cette institution emblématique.
                 </p>
                 
                 <p className="leading-relaxed">
-                  Guidés par les valeurs de solidarité, de transparence et d'excellence éducative, nous travaillons 
-                  sans relâche pour offrir aux enfants de Belladère un environnement d'apprentissage moderne, 
+                  Guidés par les valeurs de solidarité, de transparence et d&apos;excellence éducative, nous travaillons 
+                  sans relâche pour offrir aux enfants de Belladère un environnement d&apos;apprentissage moderne, 
                   sûr et stimulant qui leur permettra de réaliser leur plein potentiel.
                 </p>
                 
                 <div className="bg-indigo-50 p-4 rounded-lg mt-6">
                   <p className="text-indigo-800 font-medium italic">
-                    "L'éducation est l'arme la plus puissante pour changer le monde. Ensemble, 
-                    nous construisons l'avenir de Belladère, un enfant à la fois."
+                    &quot;L&apos;éducation est l&apos;arme la plus puissante pour changer le monde. Ensemble, 
+                    nous construisons l&apos;avenir de Belladère, un enfant à la fois.&quot;
                   </p>
                 </div>
               </div>
@@ -99,8 +99,8 @@ export default function TeamSection() {
               Rejoignez notre mission
             </h4>
             <p className="text-indigo-100 max-w-2xl mx-auto">
-              Que vous soyez ancien élève, parent, enseignant ou simplement quelqu'un qui croit en l'importance 
-              de l'éducation, votre contribution peut faire la différence. Ensemble, reconstruisons l'École Anténor Firmin.
+              Que vous soyez ancien élève, parent, enseignant ou simplement quelqu&apos;un qui croit en l&apos;importance 
+              de l&apos;éducation, votre contribution peut faire la différence. Ensemble, reconstruisons l&apos;École Anténor Firmin.
             </p>
           </div>
         </motion.div>
