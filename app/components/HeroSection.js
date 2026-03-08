@@ -2,9 +2,16 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useContext } from "react";
+import { DonationContext } from "../context/DonationContext";
 
 export default function HeroSection() {
-  
+  const { setSelectedAmount } = useContext(DonationContext);
+
+  const handleAmountClick = (amount) => {
+    setSelectedAmount(amount);
+    document.getElementById('donation')?.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
     <section className="relative min-h-screen flex items-center bg-blue-900 text-white overflow-hidden">
       {/* Overlay d'image en arrière-plan */}
@@ -33,8 +40,30 @@ export default function HeroSection() {
               <br />
               Nous solicitons l&apos;aide de toute la communauté belladeroise pour accomplir cette mission.
             </p>
+
+            {/* Section d'appel à la donation */}
+            <div className="bg-white bg-opacity-20 backdrop-blur-md rounded-xl p-8 mb-12 max-w-2xl border border-white border-opacity-30">
+              <p className="text-lg font-semibold text-blue-900 mb-4">Chaque don fait une différence 💚</p>
+              <div className="grid grid-cols-3 gap-2 mb-4">
+                <button onClick={() => handleAmountClick(5000)} className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-3 rounded-lg transition duration-300 text-sm cursor-pointer">50 $</button>
+                <button onClick={() => handleAmountClick(7500)} className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-3 rounded-lg transition duration-300 text-sm cursor-pointer">75 $</button>
+                <button onClick={() => handleAmountClick(10000)} className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-3 rounded-lg transition duration-300 text-sm cursor-pointer">100 $</button>
+              </div>
+              <Link 
+                href="#donation" 
+                className="w-full block bg-gradient-to-r from-green-400 to-green-600 hover:from-green-500 hover:to-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 text-center"
+              >
+                Donner maintenant
+              </Link>
+            </div>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
+              <Link 
+                href="#donation" 
+                className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1 text-center"
+              >
+                Contribuer maintenant
+              </Link>
               <Link 
                 href="#about" 
                 className="bg-white hover:bg-blue-50 text-blue-900 font-bold py-3 px-8 rounded-full transition duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1 text-center"
